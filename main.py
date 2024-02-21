@@ -18,6 +18,7 @@ def main():
     data = json.loads(req.text)
     for chain in data:
         name = chain['name']
+        print(name)
         doc = {
             "name": name,
             "data": chain,
